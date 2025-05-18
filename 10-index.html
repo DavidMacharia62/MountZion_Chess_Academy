@@ -324,6 +324,78 @@
           <header class="section-header">
             <h2 class="section-title">Contact</h2>
             <p class="section-tagline">We'd love to hear from you!</p>
+            <form action="http://localhost:5000/enroll" method="POST" style="max-width: 600px; font-family: Arial, sans-serif; color: #333;">
+  <h2 style="color: #6A1B9A;">Enroll Your Child in Mount Zion Chess Academy</h2>
+  <table style="width: 100%; border-spacing: 10px;">
+    <tr>
+      <td><label for="parent_name">Parent’s Name:</label></td>
+      <td><input type="text" name="parent_name" id="parent_name" placeholder="e.g., Sarah Njoroge" required style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="email">Email Address:</label></td>
+      <td><input type="email" name="email" id="email" placeholder="e.g., sarah@example.com" required style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="phone">Phone Number:</label></td>
+      <td><input type="tel" name="phone" id="phone" placeholder="e.g., 0712 345 678" style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="child_name">Child’s Name:</label></td>
+      <td><input type="text" name="child_name" id="child_name" placeholder="e.g., Kevin Njoroge" required style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="age">Child’s Age:</label></td>
+      <td><input type="number" name="age" id="age" min="6" max="14" placeholder="e.g., 9" required style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="school">School Name:</label></td>
+      <td><input type="text" name="school" id="school" placeholder="e.g., St. Mary’s Academy" style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="program">Preferred Program:</label></td>
+      <td>
+        <select name="program" id="program" required style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+          <option value="">-- Please choose --</option>
+          <option>In-School Program</option>
+          <option>After-School Program</option>
+          <option>Weekend Workshop</option>
+          <option>Online Classes</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="location">Location:</label></td>
+      <td><input type="text" name="location" id="location" placeholder="e.g., Nairobi West" required style="width: 100%; padding: 8px; border: 1px solid #ccc;"></td>
+    </tr>
+    <tr>
+      <td><label for="notes">Additional Notes:</label></td>
+      <td><textarea name="notes" id="notes" placeholder="e.g., My child is new to chess..." rows="4" style="width: 100%; padding: 8px; border: 1px solid #ccc;"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <label style="font-size: 0.95em;">
+          <input type="checkbox" name="consent" required>
+          I consent to be contacted by Mount Zion Chess Academy.
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <button type="submit" style="
+          padding: 10px 25px;
+          background-color: #6A1B9A;
+          color: white;
+          border: none;
+          font-size: 1em;
+          cursor: pointer;
+          transition: background-color 0.3s ease;">
+          Submit Enrollment Request
+        </button>
+      </td>
+    </tr>
+  </table>
+</form>
+
           </header>
           <div class="section-body">
             <p>Interested in bringing Mount Zion Chess Academy to your school or enrolling your child? We’d love to hear from you.</p>
